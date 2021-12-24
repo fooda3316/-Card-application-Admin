@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.cards.SubCardsShowActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/sub_cards_show_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+
+            />
+        <TextView
+            android:id="@+id/sub_cards_show_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+
+            />
+        <EditText
+
+            android:layout_margin="4.0dip"
+            android:paddingStart="@dimen/button_padding_left"
+            android:paddingTop="@dimen/button_padding_top"
+            android:paddingEnd="@dimen/button_padding_right"
+            android:paddingBottom="@dimen/button_padding_top"
+            android:background="@drawable/answer_tens_background"
+            android:id="@+id/edtCardShow"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:hint="أدخل الرقم المتسلسل هنا"/>
+        <Button
+            android:background="@drawable/button_pc"
+            android:id="@+id/addCardsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/button_padding_left"
+            android:paddingTop="@dimen/button_padding_top"
+            android:paddingRight="@dimen/button_padding_right"
+            android:paddingBottom="@dimen/button_padding_top"
+            android:text= "إضافة بطاقة"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/delius_swash_caps"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.admin.AllCardsAddminActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/row_products_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/chargingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_centerHorizontal="true" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="400.0dip"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:background="@drawable/card7"
+                                android:id="@+id/unfinishedRQImage"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY" />
+
+                                </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5.0dip"
+                        android:layout_centerHorizontal="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="15dp"
+
+                                android:paddingRight="15dp"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:id="@+id/product_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+
+                                    android:text="Type: "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18dp" />
+
+
+                                <org.angmarch.views.NiceSpinner
+                                    android:id="@+id/spinner_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    app:arrowTint="@color/colorPrimary"
+                                    app:backgroundSelector="@drawable/background_selector"
+                                     app:layout_constraintVertical_bias="0.0"
+                                    app:textTint="@color/colorPrimary" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="4dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+
+                                    android:text="Branch: "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18dp" />
+
+
+                                <org.angmarch.views.NiceSpinner
+                                    android:id="@+id/spinner_branch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+
+                                    app:arrowTint="@color/colorPrimary"
+                                    app:backgroundSelector="@drawable/background_selector"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:textTint="@color/colorPrimary" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="4dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+
+                                    android:text="Category: "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18dp" />
+
+
+                                <org.angmarch.views.NiceSpinner
+                                    android:id="@+id/spinner_category"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+
+                                    app:arrowTint="@color/colorPrimary"
+                                    app:backgroundSelector="@drawable/background_selector"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintVertical_bias="0.0"
+                                    app:textTint="@color/colorPrimary" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="4dp"
+                                android:paddingRight="15dp"
+                                android:visibility="gone"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+
+                                    android:text="Value: "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18dp" />
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:inputType="number"
+                                   android:background="@drawable/white_edit_text"
+                                    android:padding="@dimen/margin_5dp"
+                                    android:layout_margin="3dp"
+                                    android:textSize="30sp"
+                                    android:layout_height="60dp"
+                                    android:id="@+id/cardValueInput"
+                                    android:hint="أدخل القيمة"
+
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="4dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+
+                                    android:text="Number: "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18dp" />
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:inputType="text"
+                                    android:padding="@dimen/margin_5dp"
+                                    android:layout_margin="3dp"
+                                    android:textSize="30sp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/white_edit_text"
+
+                                    android:id="@+id/cardSerialNumberInput"
+                                    android:hint="أدخل الرقم المتسلسل"
+
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <Button
+                            android:background="@drawable/button_pc"
+                            android:id="@+id/addCardAdminButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4.0dip"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/button_padding_left"
+                            android:paddingTop="@dimen/button_padding_top"
+                            android:paddingRight="@dimen/button_padding_right"
+                            android:paddingBottom="@dimen/button_padding_top"
+                            android:text="إضافة بطاقة"
+                            android:textAllCaps="false"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:fontFamily="@font/delius_swash_caps"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold|italic"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fooda"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activities.main.ControlActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="   لوحة\n التحكم "
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margin_15dp"/>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="170.0dip"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+
+            android:layout_width="0.0dip"
+            android:id="@+id/addCardLayout"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.2"
+            android:background="#F44109"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="131dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="19dp"
+                android:gravity="center"
+                android:fontFamily="@font/arab"
+                android:text="إضافة \n بطاقة"
+
+                android:textColor="#ffffffff"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/allCardsLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.2"
+            android:background="#0E0E0E"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="131dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="19dp"
+                android:gravity="center"
+                android:fontFamily="@font/arab"
+                android:text="عرض \n  البطاقات"
+                                      android:textColor="#ffffffff"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+    <View
+
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        />
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="170.0dip"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/showPagesLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#ff0f8c91"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="131dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="19dp"
+                android:fontFamily="@font/arab"
+                android:gravity="center"
+                android:text="عرض \n  الصفحات"
+                android:textColor="#ffffffff"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/addPageLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#673AB7"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="131dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="19dp"
+                android:gravity="center"
+                android:fontFamily="@font/arab"
+                android:text="إضافة \n صفحة"
+                android:textColor="#ffffffff"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="170.0dip"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/imeLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#ff0f8c91"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="131dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="19dp"
+                android:fontFamily="@font/arab"
+                android:gravity="center"
+                android:text="المشرفين "
+                android:textColor="#ffffffff"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/requestCardsLayout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="#D32F2F"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="206dp"
+                android:layout_height="131dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="19dp"
+                android:gravity="center"
+                android:fontFamily="@font/arab"
+                android:text="طلبات  \n العملاء"
+                android:textColor="#ffffffff"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="5.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="5.0dip"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.reqests.UnfinishedRQShowActivity">
+    <LinearLayout
+
+        android:id="@+id/loginChargingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:padding="@dimen/margin_5dp"
+            android:layout_margin="3dp"
+            android:layout_height="40dp"
+            android:id="@+id/unfinishedRQInputName"
+            android:hint="أدخل اسمك هنا"
+            android:background="@drawable/answer_tens_background"
+
+            />
+        <EditText
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:padding="@dimen/margin_5dp"
+            android:layout_margin="3dp"
+            android:layout_height="40dp"
+            android:id="@+id/unfinishedRQInputPass"
+            android:hint="أدخل كلمة السر هنا"
+            android:background="@drawable/answer_tens_background"
+
+            />
+        <EditText
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:padding="@dimen/margin_5dp"
+            android:layout_margin="3dp"
+            android:layout_height="40dp"
+            android:id="@+id/unfinishedRQInputRePass"
+            android:hint="اعد ادخال كلمة السر هنا"
+            android:background="@drawable/answer_tens_background"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_5dp"
+            android:layout_margin="3dp"
+            android:layout_height="40dp"
+            android:id="@+id/unfinishedRQInputVE"
+            android:hint="أدخل رمز التحقق هناا"
+            android:background="@drawable/answer_tens_background"
+
+            />
+        <Button
+            android:background="@drawable/button_pc"
+            android:id="@+id/unfinishedRQButtonLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="@dimen/button_padding_left"
+            android:paddingTop="@dimen/button_padding_top"
+            android:paddingRight="@dimen/button_padding_right"
+            android:paddingBottom="@dimen/button_padding_top"
+            android:text= "سجل الآن"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/delius_swash_caps"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/chargingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="400.0dip"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/unfinishedRQImage"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY" />
+
+                <ProgressBar
+                    android:id="@+id/unfinishedRQpro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5.0dip"
+            android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:padding="@dimen/margin_5dp"
+            android:layout_margin="3dp"
+            android:layout_height="40dp"
+            android:id="@+id/unfinishedRQInput"
+            android:hint="أدخل الرصيد هنا"
+            android:background="@drawable/answer_tens_background"
+
+            />
+        <TextView
+            android:visibility="gone"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/unfinishedRQShow"
+            android:text="تم الشحن"
+
+            />
+        <Button
+            android:background="@drawable/button_pc"
+            android:id="@+id/unfinishedRQButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="@dimen/button_padding_left"
+            android:paddingTop="@dimen/button_padding_top"
+            android:paddingRight="@dimen/button_padding_right"
+            android:paddingBottom="@dimen/button_padding_top"
+            android:text="أشحن الآن"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/delius_swash_caps"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

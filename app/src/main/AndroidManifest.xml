@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.adminapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.cards.SubCardsActivity" />
+        <activity android:name=".activities.cards.SubCardsShowActivity"/>
+        <activity android:name=".activities.cards.BranchActivity" />
+        <activity android:name=".activities.reqests.FullShowActivity" />
+        <activity android:name=".activities.cards.PrivetCardsActivity" />
+        <activity android:name=".activities.ime.AddImeActivity" />
+        <activity android:name=".activities.ime.ImeActivity" />
+        <activity android:name=".activities.reqests.RequestShowActivity" />
+        <activity android:name=".activities.reqests.RequestedCardActivity" />
+        <activity android:name=".activities.page.PagesActivity" />
+        <activity android:name=".activities.main.ControlActivity" />
+        <activity android:name=".activities.admin.AllCardsAddminActivity" />
+        <activity android:name=".activities.cards.AllCardsShowActivity" />
+        <activity android:name=".activities.admin.AdminsShowActivity" />
+        <activity android:name=".activities.admin.AdminActivity" />
+        <activity android:name=".activities.cards.ShowCardsActivity" />
+        <activity android:name=".activities.users.AllUsersActivity"/>
+        <activity android:name=".activities.cards.AddCardsActivity" />
+        <activity android:name=".activities.main.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.reqests.UnfinishedRQShowActivity" />
+        <activity android:name=".activities.reqests.UnfinishedRQActivity" />
+        <activity android:name=".activities.page.UploadPageActivity" />
+        <activity
+            android:name=".activities.main.SearchActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+    </application>
+
+</manifest>

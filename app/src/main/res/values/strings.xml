@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Admin SA</string>
+    <string-array name="charegs_rq">
+        <item>طلبات الشحن</item>
+        <item>طلبات الشحن</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_dialog">show Dialog</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="android_app">ANDROID APP</string>
+    <string name="signin">Sign in</string>
+    <string name="cancel">Cancel</string>
+    <string name="editCards">تعديل البطاقات</string>
+    <string name="addCards">إضافة بطاقات</string>
+    <string name="progress_wait">الرجاء الانتظار</string>
+    <string name="addCard">إضافة بطاقة</string>
+    <string name="card_name">Card name</string>
+    <string name="card_ctegory_id">Category id</string>
+    <string name="card_price">Price</string>
+    <string name="name">أدخل الاسم هنا</string>
+    <string name="name1">أدخل الرقم المتسلسل هنا</string>
+    <string name="uri">أدخل الرابط هنا</string>
+    <string name="add_page">إضافة صفحة</string>
+    <string name="addPages">إضافة صفحات</string>
+    <string name="search_hint">بحث</string>
+    <string name="add_ime">إضافة رقم متسلسل</string>
+</resources>
